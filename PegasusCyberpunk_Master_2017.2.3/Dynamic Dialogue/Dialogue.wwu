@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{593FA8C9-81C7-4DEE-9B35-E08277148512}" SchemaVersion="85">
+	<DynamicDialogue>
+		<WorkUnit Name="Dialogue" ID="{593FA8C9-81C7-4DEE-9B35-E08277148512}" PersistMode="Standalone">
+			<ChildrenList>
+				<DialogueEvent Name="Play_Dialogue" ID="{5D1BE3F0-704B-48CF-950F-BADA8FF5D859}">
+					<ArgumentList>
+						<ArgumentRef Name="Lines" ID="{65AE14CF-0663-4EAC-96FC-E5022680F5F7}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Checkpoint_1" ID="{BA7A1AA1-2DA0-4966-B329-9DA21CE4820A}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="VO_RainingHarder_Stereo" ID="{D67C0E0D-F57B-41B1-AC0D-8AEDC9D75307}" WorkUnitID="{C1032F31-A204-48FA-9E3C-DCBF4E0FEFA2}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Checkpoint_2" ID="{818BC229-E7D3-4CB5-81CF-B502751B5261}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="VO_LadyLuck_Stereo" ID="{6845A66E-8D78-48CB-8564-6B7E41CE466F}" WorkUnitID="{C1032F31-A204-48FA-9E3C-DCBF4E0FEFA2}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Checkpoint_3" ID="{D58240FF-7FF0-4243-A517-41BC2CA12116}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="VO_CallItDenial_Stereo" ID="{FCD6D31F-CA41-467D-A66D-AD203ACFEDE9}" WorkUnitID="{C1032F31-A204-48FA-9E3C-DCBF4E0FEFA2}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="BossFight" ID="{DF0DA54F-85B1-4DE1-B0F7-A88977701776}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="VO_DontKnowAboutAngels_Stereo" ID="{42D5752C-FF33-4BBE-B75D-C914D1327011}" WorkUnitID="{C1032F31-A204-48FA-9E3C-DCBF4E0FEFA2}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Checkpoint_0" ID="{718DC69A-10E6-4867-9C4E-2338ECAF4A5B}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="VO_DarkArmyOfDeadMen_Stereo" ID="{ED6CB42C-CAF6-477C-8C00-661307EB4EF3}" WorkUnitID="{C1032F31-A204-48FA-9E3C-DCBF4E0FEFA2}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="BossDefeated" ID="{3CBA8444-71C4-49F6-9558-F48E01B92541}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="VO_Hourglass_Stereo" ID="{2A5DBCC2-C68C-4EFA-8D85-6B46B1D925D1}" WorkUnitID="{C1032F31-A204-48FA-9E3C-DCBF4E0FEFA2}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Lines" ID="{65AE14CF-0663-4EAC-96FC-E5022680F5F7}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="VO_RainingHarder_Stereo" ID="{D67C0E0D-F57B-41B1-AC0D-8AEDC9D75307}" WorkUnitID="{C1032F31-A204-48FA-9E3C-DCBF4E0FEFA2}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</DialogueEvent>
+			</ChildrenList>
+		</WorkUnit>
+	</DynamicDialogue>
+</WwiseDocument>

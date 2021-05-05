@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 89f60ab91b10fb34f9cb741c10f6bb83
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: boss_horse_death_0
+    21300002: boss_horse_death_1
+    21300004: boss_horse_death_2
+    21300006: boss_horse_death_3
+    21300008: boss_horse_death_4
+    21300010: boss_horse_death_5
+    21300012: boss_horse_death_6
+    21300014: boss_horse_death_7
+    21300016: boss_horse_death_8
+    21300018: boss_horse_death_9
+    21300020: boss_horse_death_10
+    21300022: boss_horse_death_11
+    21300024: boss_horse_death_12
+    21300026: boss_horse_death_13
+    21300028: boss_horse_death_14
+    21300030: boss_horse_death_15
+    21300032: boss_horse_death_16
+    21300034: boss_horse_death_17
+    21300036: boss_horse_death_18
+    21300038: boss_horse_death_19
+    21300040: boss_horse_death_20
+    21300042: boss_horse_death_21
+    21300044: boss_horse_death_22
+    21300046: boss_horse_death_23
+    21300048: boss_horse_death_24
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss_horse_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7946.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18795e5a1bd428242b99631b213986f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_1
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 7946.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ef42d8428ffb94ea00cd2a613c2d4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_2
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 7946.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75623ffa9357dc34db7297c52b2e9e00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_3
+      rect:
+        serializedVersion: 2
+        x: 5958
+        y: 7946.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a861259fe9b34044b93db5dddce4411b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_4
+      rect:
+        serializedVersion: 2
+        x: 7944
+        y: 7946.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46815fca24c414f40acbd4ace4a76cf8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5960.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306b0dc6cfd96294f8830e5a8b22bb76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_6
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 5960.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85ad5ecbadf54348be4f72936df8c36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_7
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 5960.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288c778a8a9f8c14a82cf3be5152e31f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_8
+      rect:
+        serializedVersion: 2
+        x: 5958
+        y: 5960.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46380f13fde54040af409ea12bd7153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_9
+      rect:
+        serializedVersion: 2
+        x: 7944
+        y: 5960.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94793fa4c32f194ca7e7aed929c501e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3974.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450fdff720052354db34611358ecbc52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_11
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 3974.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675efe87eca0f324cae61b8d18e6ad8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_12
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 3974.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fed8d548fba4d643ae6b2564c634e6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_13
+      rect:
+        serializedVersion: 2
+        x: 5958
+        y: 3974.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d0871d177377e4fa4f7786cb9ccb03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_14
+      rect:
+        serializedVersion: 2
+        x: 7944
+        y: 3974.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cac4aecd959f384ab24ee0c00a4734c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1988.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44177bb072980b409eb9c5ce3eb817d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_16
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 1988.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776491a0ed1112749b011feda4748d20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_17
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 1988.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cddf1340721fa14587d2b0b30c900dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_18
+      rect:
+        serializedVersion: 2
+        x: 5958
+        y: 1988.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970ca7e92508c2a428f0b0c4e1749b26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_19
+      rect:
+        serializedVersion: 2
+        x: 7944
+        y: 1988.4
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed08be29daf0ca4479bd4cc9ed813bb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.4000244
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d30d77aa396c6b4c81f09c7210cb470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_21
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 2.4000244
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d4c2f5c2af4924a96e7deb327fda79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_22
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 2.4000244
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afacba2565d490541ab4242e650080f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_23
+      rect:
+        serializedVersion: 2
+        x: 5958
+        y: 2.4000244
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720681906553dac40b65c26a3dda22d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_horse_death_24
+      rect:
+        serializedVersion: 2
+        x: 7944
+        y: 2.4000244
+        width: 1986.6
+        height: 1986.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6b16f1c8c23104baf288c5619692fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0c68b0f97d7a3d745b2cd0df9a81f6a1
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

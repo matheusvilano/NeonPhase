@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5BFE3CFF-BA32-4A71-956E-3897342FAD28}" SchemaVersion="85">
+	<States>
+		<WorkUnit Name="Music" ID="{5BFE3CFF-BA32-4A71-956E-3897342FAD28}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="GameState" ID="{1B18ACC2-5FF3-42D4-B2C4-B0E3141D8CA4}">
+					<ChildrenList>
+						<State Name="None" ID="{BCBBEF90-B0A9-4A98-9EDE-1FEA8E8B0CD0}"/>
+						<State Name="MainMenu" ID="{9F998A2E-203E-48B6-A1EF-844E20CCB82C}"/>
+						<State Name="Gameplay" ID="{79B0ACEC-78D0-48A6-B352-F7A00B397F61}"/>
+						<State Name="BossFight" ID="{7DAE3F69-86B0-47B1-AEAC-DCE1018ADE94}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="BossState" ID="{8BBA8251-A1CB-4956-B0AF-B3E093921223}">
+					<ChildrenList>
+						<State Name="None" ID="{2F24047B-2958-4863-A9BE-CCAD6C22531B}"/>
+						<State Name="Alive" ID="{2F7419C1-0DC9-459D-B802-7B08DEF8B0E7}"/>
+						<State Name="Dead" ID="{0C7C723A-3DC7-4657-BC11-4A0E3C8E838D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="DialogueState" ID="{62851CC5-FAA0-4B6A-9F75-664A45797D23}">
+					<ChildrenList>
+						<State Name="None" ID="{7DA741FC-3207-474C-AC25-F09899D6B9F7}"/>
+						<State Name="Playing" ID="{5EBF474F-758D-4459-B527-FC5BDFA8C320}"/>
+						<State Name="NotPlaying" ID="{68D61742-76A6-4B84-8697-B8AD0CE0E263}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Playing" ID="{5EBF474F-758D-4459-B527-FC5BDFA8C320}"/>
+							<EndState Name="NotPlaying" ID="{68D61742-76A6-4B84-8697-B8AD0CE0E263}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="NotPlaying" ID="{68D61742-76A6-4B84-8697-B8AD0CE0E263}"/>
+							<EndState Name="Playing" ID="{5EBF474F-758D-4459-B527-FC5BDFA8C320}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

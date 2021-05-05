@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{14D9A645-DA26-4042-BC80-13547CE7930F}" SchemaVersion="85">
+	<SoundcasterSessions>
+		<WorkUnit Name="PC_Caster" ID="{14D9A645-DA26-4042-BC80-13547CE7930F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="TestSesh" ID="{BDCEDAF5-EA02-406F-A999-541ACDA7D64B}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Weather" ID="{7387CC05-0141-4AF8-92C5-0609E3F9775B}" WorkUnitID="{2C7DF86D-98EC-4EF3-B0D4-A37E12E99C57}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Player_Footstep" ID="{15E65EE3-D0FD-41A3-9055-256A14E351BC}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Player_Gunshot" ID="{8C493B9A-522C-4752-A8B9-66447DFCD40A}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_VO_Intro" ID="{EC82C60E-7A6B-4E4F-9AEF-268022A18764}" WorkUnitID="{52AB810E-EDF1-481F-A7D0-9A03D9734795}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Weather" ID="{D3D80A2C-ECB3-4942-BF27-3EB96763ACC8}" WorkUnitID="{2C7DF86D-98EC-4EF3-B0D4-A37E12E99C57}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Player_Jump" ID="{3E293F47-7123-4816-840F-655C2B924CCA}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Enemy_Gunshot" ID="{AA811647-3C0C-4B2D-BCB4-927517473AFC}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_VO_LadyLuck" ID="{A551F6E5-DD94-4E3C-AED2-66ADC0378874}" WorkUnitID="{52AB810E-EDF1-481F-A7D0-9A03D9734795}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{45C8B237-DE52-44EA-912B-593845E60217}" WorkUnitID="{4448EDA5-F6AF-436C-82ED-BC5B6A1FB36D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Player_Land" ID="{84EEDCC6-2B8D-4CFE-9C1D-005346083087}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_LaserOrbs" ID="{FC085124-6274-4118-9D30-C06914CAF513}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_VO_RainingHarder" ID="{F82895DD-B337-481F-BD77-FAAC82A72B06}" WorkUnitID="{52AB810E-EDF1-481F-A7D0-9A03D9734795}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Enemy_Footstep" ID="{7F6456A6-D007-47BE-8214-5B8169B15B8B}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Laser_Hit" ID="{99F5A272-459F-4E40-820E-A1E6F47B0C19}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_VO_BossStart" ID="{B52CCECE-4A5A-41DC-B3A4-A63FCC58C4E2}" WorkUnitID="{52AB810E-EDF1-481F-A7D0-9A03D9734795}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Enemy_Wings" ID="{8E089191-8CB3-4706-98C2-E14DF4287C7C}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Boss_Explosion" ID="{6C941122-002A-4C9F-AECE-9376EA049C7F}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_VO_NearDeath" ID="{CC106E5A-CBA0-4812-B49E-1D85853E1EA0}" WorkUnitID="{52AB810E-EDF1-481F-A7D0-9A03D9734795}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Boss_Wings" ID="{EC65AEF8-965E-4FD1-9444-350A93F46570}" WorkUnitID="{8887161A-181F-478F-8C82-0A9918752876}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_VO_BossDeath" ID="{5D47B0AD-EC52-4DCB-95F8-7EEECD8BA8DA}" WorkUnitID="{52AB810E-EDF1-481F-A7D0-9A03D9734795}"/>
+							<Position X="5" Y="3"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Intensity" ID="{C483340A-117A-4836-BA47-F9CD5314B717}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="BossFight" ID="{7DAE3F69-86B0-47B1-AEAC-DCE1018ADE94}"/>
+						<CurrentStateRef Name="False" ID="{1347BB69-F088-4C03-8FE6-35F7DCF0B8FE}"/>
+						<CurrentStateRef Name="Dead" ID="{0C7C723A-3DC7-4657-BC11-4A0E3C8E838D}"/>
+						<CurrentStateRef Name="NotPlaying" ID="{68D61742-76A6-4B84-8697-B8AD0CE0E263}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Concrete" ID="{F416D2B4-0DA1-461A-B47C-824D34628B5B}"/>
+						<CurrentSwitchRef Name="BossDefeated" ID="{3CBA8444-71C4-49F6-9558-F48E01B92541}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

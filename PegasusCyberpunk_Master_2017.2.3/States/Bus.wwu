@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{11544FEC-CED1-461E-A047-BDE4C8AEE50D}" SchemaVersion="85">
+	<States>
+		<WorkUnit Name="Bus" ID="{11544FEC-CED1-461E-A047-BDE4C8AEE50D}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="IsPaused" ID="{710B09C0-4F6A-458C-AE78-0A839EA64A56}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{E7FE8E00-064A-4DDB-A34A-C2A2A50A5836}"/>
+						<State Name="True" ID="{EC1BAD0A-CF5E-40D3-B0EF-1E5F0C687E52}"/>
+						<State Name="False" ID="{1347BB69-F088-4C03-8FE6-35F7DCF0B8FE}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
