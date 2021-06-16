@@ -22,32 +22,21 @@ Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/
 Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/
 
 # Wwise Project
-Wwise/IncrementalSoundBankData.xml
-Wwise/.cache/
-Wwise/.backup/
-Wwise/*.akd
-Wwise/*.akpk
-Wwise/*.prof
-Wwise/*.validationcache
-Wwise/*.wsettings
-Wwise/GeneratedSoundBanks/**/*.bnk
+*.akd
+WwiseProject/IncrementalSoundBankData.xml
+WwiseProject/.cache/
+WwiseProject/.backup/
+WwiseProject/*.akpk
+WwiseProject/*.prof
+WwiseProject/*.validationcache
+WwiseProject/*.wsettings
+WwiseProject/GeneratedSoundBanks/**/*.bnk
 
 #FMOD Plugin
 Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
 Assets/Plugins/FMOD/Cache/fmod_register_static_plugins.cpp
 fmod.log
 fmod_editor.log
-
-# FMOD Project
-FMOD/.user/
-FMOD/.unsaved/
-FMOD/.cache/
-FMOD/.restore/
-FMOD/user/
-FMOD/unsaved/
-FMOD/restore/
-FMOD/fmod.log
-FMOD/fmod_editor.log
 
 # Code Editors
 .vs/
