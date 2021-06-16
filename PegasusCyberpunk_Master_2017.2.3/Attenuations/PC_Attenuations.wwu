@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{CC873F5A-418B-4398-AEB6-5307A329F3E3}" SchemaVersion="85">
-	<Attenuations>
-		<WorkUnit Name="PC_Attenuations" ID="{CC873F5A-418B-4398-AEB6-5307A329F3E3}" PersistMode="Standalone"/>
-	</Attenuations>
-</WwiseDocument>

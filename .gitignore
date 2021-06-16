@@ -22,15 +22,15 @@ Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/
 Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/
 
 # Wwise Project
-PegasusCyberpunk_Master_2017.2.3/IncrementalSoundBankData.xml
-PegasusCyberpunk_Master_2017.2.3/.cache/
-PegasusCyberpunk_Master_2017.2.3/.backup/
-PegasusCyberpunk_Master_2017.2.3/*.akd
-PegasusCyberpunk_Master_2017.2.3/*.akpk
-PegasusCyberpunk_Master_2017.2.3/*.prof
-PegasusCyberpunk_Master_2017.2.3/*.validationcache
-PegasusCyberpunk_Master_2017.2.3/*.wsettings
-PegasusCyberpunk_Master_2017.2.3/GeneratedSoundBanks/**/*.bnk
+Wwise/IncrementalSoundBankData.xml
+Wwise/.cache/
+Wwise/.backup/
+Wwise/*.akd
+Wwise/*.akpk
+Wwise/*.prof
+Wwise/*.validationcache
+Wwise/*.wsettings
+Wwise/GeneratedSoundBanks/**/*.bnk
 
 #FMOD Plugin
 Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
