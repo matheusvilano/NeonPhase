@@ -5,20 +5,28 @@ public class MainMenu : MonoBehaviour
 {
     [Header("Scenes")]
     public string levelToLoad = "Gameplay";
-    public string creditsLevel = "Credit Screen";
-    public string menuLevel = "Main Menu";
+    public string creditsLevel = "Credit";
+    public string menuLevel = "MainMenu";
 
     [Header("GameObjects")]
-    [SerializeField]
-    private GameObject mainMenu;
-    [SerializeField]
-    private GameObject controls;
+    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject controls;
+    [SerializeField] private GameObject credits;
+
+
+    [Header("Audio")]
+    [SerializeField] private string mainMenuState = "GameState/MainMenu";
+
+    private void Start()
+    {
+        AkSoundEngine.SetState(mainMenuState.Split(new[]{'/'})[0], mainMenuState.Split(new[]{'/'})[1]);
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown("escape") && (SceneManager.GetActiveScene() != SceneManager.GetSceneByName(menuLevel)))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(menuLevel);
+            GoToMenu();
         }
     }
 
@@ -30,10 +38,11 @@ public class MainMenu : MonoBehaviour
 
     public void GoToMenu()
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Main Menu"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName(menuLevel))
         {
             mainMenu.SetActive(true);
             controls.SetActive(false);
+            credits.SetActive(false);
         }
         else
         {

@@ -3,11 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class PauseUI : MonoBehaviour 
 {
+	public static bool paused = false;
 	public GameObject pauseUI;
 
     private Scene currentScene;
-
-	private bool paused = false;
 
 	private void Awake() => currentScene = SceneManager.GetActiveScene();
 
@@ -15,7 +14,7 @@ public class PauseUI : MonoBehaviour
 
 	void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.JoystickButton7))
+		if(Input.GetKeyDown(KeyCode.JoystickButton7) || Input.GetKeyDown(KeyCode.Escape))
 		{
 			paused = !paused;
 		}
@@ -37,15 +36,36 @@ public class PauseUI : MonoBehaviour
 
 	public void Restart()
 	{
-		//Application.LoadLevel(Application.loadedLevel);
-        SceneManager.LoadScene(currentScene.buildIndex);
+        SceneManager.LoadScene("GameplayFinal");
 	}
 
 	public void MainMenu()
 	{
-		//Application.LoadLevel(0);
-        SceneManager.LoadScene(1);
+		// Update game state
+		AkSoundEngine.SetState("GameState", "MainMenu");
+
+		// Stop any dialogue by playing silence
+		CheckPoint.StopAllDialogue(this.gameObject);
+
+		// Load main menu
+        SceneManager.LoadScene("MainMenu");
 	}
 
-	public void Quit() => Application.Quit();
+	private void OnDestroy()
+{
+		AkSoundEngine.SetState("IsPaused", "False");
+		pauseUI.SetActive(false);
+		Time.timeScale = 1;
+		enabled = false;
+		paused = false;
+	}
+
+	public void Quit()
+	{
+		#if UNITY_EDITOR
+			UnityEditor.EditorApplication.ExitPlaymode();
+		#else
+			UnityEngine.Application.Quit();
+		#endif
+	}
 }

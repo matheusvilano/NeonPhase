@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    [SerializeField]
-    private AK.Wwise.Event music = default;
-    [SerializeField]
-    private AK.Wwise.State initialState = default;
+    // Removed AK.Wwise.Event due to serialization problems with v2017.
+    [Header("Wwise")]
+    [SerializeField] private string music = "Play_Music";
+    [SerializeField] private string initialState = "GameState/MainMenu";
 
     private bool isPlaying = false;
 
     private void Start()
     {
+
+        // Check if the music is already playing; it not, play.
         if (!isPlaying)
         {
-            music.Post(this.gameObject);
-            isPlaying = true;
+            AkSoundEngine.PostEvent(music, this.gameObject);
+            this.isPlaying = true;
         }
-        initialState.SetValue();
+
+        // Set initial Wwise State for Music
+        AkSoundEngine.SetState(initialState.Split(new[]{'/'})[0], initialState.Split(new[]{'/'})[1]);
     }
 }

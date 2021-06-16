@@ -2,6 +2,10 @@
 
 public class NeonPhase : MonoBehaviour
 {
+    // Predefined Wwise Events (they will NOT change)
+    private const string playPhaseWwiseEvent = "Play_Player_Phase";
+    private const string stopPhaseWwiseEvent = "Stop_Player_Phase";
+
     public Transform origin;
     public Color neonColor;
     public Transform dest;
@@ -49,14 +53,14 @@ public class NeonPhase : MonoBehaviour
     public void StartPhase()
     {
         // Sound
-        AkSoundEngine.PostEvent("Play_Player_Phase", this.gameObject);
+        AkSoundEngine.PostEvent(NeonPhase.playPhaseWwiseEvent, this.gameObject);
 
         // Physics
         Debug.Log("Origin X: "+origin.position.x+ "Dest X: " + dest.position.x);
         this.transform.position = origin.position;
         canPhase = false;
         currentCooldown = Cooldown;
-        GetComponent<Inputcontroller>().enabled = false;
+        GetComponent<InputController>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Rigidbody2D>().isKinematic = true;
         GetComponent<Rigidbody2D>().velocity = Vector2.zero; 
@@ -122,9 +126,9 @@ public class NeonPhase : MonoBehaviour
     }
 
     public void EndPhase()
-    {
-        // Sound
-        AkSoundEngine.PostEvent("Stop_Player_Phase", this.gameObject);
+    {  
+        // Sound: stop phasing loop
+        AkSoundEngine.PostEvent(NeonPhase.stopPhaseWwiseEvent, this.gameObject);
 
         // Bool
         recentlyPhased = true;      
@@ -133,7 +137,7 @@ public class NeonPhase : MonoBehaviour
 
         // Physics
         isPhasing = false;
-        GetComponent<Inputcontroller>().enabled = true;
+        GetComponent<InputController>().enabled = true;
         GetComponent<Collider2D>().enabled = true;
         GetComponent<Rigidbody2D>().isKinematic = false;
         GetComponent<SpriteControl>().EndPhase();

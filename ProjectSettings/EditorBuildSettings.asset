@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/PreLoad.unity
     guid: 378ef279696b4114b8fb544d220e4a96
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 4216a8e2f774e6749bdb36d098c0a4b0
   - enabled: 1
-    path: Assets/Scenes/Credit Screen.unity
+    path: Assets/Scenes/Credits.unity
     guid: e85f435e02b9dab4fb7345f0cbc26789
   - enabled: 1
     path: Assets/Scenes/GameplayFinal.unity

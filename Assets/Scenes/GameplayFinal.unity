@@ -23950,6 +23950,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1679300604891288, guid: 26e6631134028874e9a8af76b80d05a6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114037007203710918, guid: 26e6631134028874e9a8af76b80d05a6,
         type: 3}
       propertyPath: m_Enabled
@@ -24068,6 +24072,26 @@ PrefabInstance:
     - target: {fileID: 224051121471712946, guid: 26e6631134028874e9a8af76b80d05a6,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224146075662926578, guid: 26e6631134028874e9a8af76b80d05a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224661959567369654, guid: 26e6631134028874e9a8af76b80d05a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224874062988807540, guid: 26e6631134028874e9a8af76b80d05a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224991469283265554, guid: 26e6631134028874e9a8af76b80d05a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -26352,6 +26376,11 @@ PrefabInstance:
         type: 3}
       propertyPath: currentHealth
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114024043129276262, guid: caaab52fa26a08345abefc751fcaa7ee,
+        type: 3}
+      propertyPath: canRespawn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114084734174323802, guid: caaab52fa26a08345abefc751fcaa7ee,
         type: 3}

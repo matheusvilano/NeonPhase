@@ -18,61 +18,22 @@ public class CheckPoint : MonoBehaviour
     [SerializeField] private string dialogueLineSwitch_5 = "BossFight";
     [SerializeField] private string dialogueLineSwitch_6 = "BossDefeated";
 
-    // Step 1: Declare the necessary fields
-    [SerializeField] private string dialogueEventName = "Play_Dialogue";
+    // Necessary fields
+    public static string dialogueEventName = "Play_Dialogue";
     private uint dialogueEventID;
     private uint dialogueSequenceID;
     private AkPlaylist akPlaylist;
 
-    // Step 2: Define the IDs (this can be done in a separate function)
+    // Define the IDs (this can be done in a separate function)
     private void Awake()
     {
         dialogueEventID = AkSoundEngine.GetIDFromString(dialogueEventName);
-        dialogueSequenceID = AkSoundEngine.DynamicSequenceOpen(gameObject);
+        dialogueSequenceID = AkSoundEngine.DynamicSequenceOpen(this.gameObject, (uint)AkCallbackType.AK_EndOfDynamicSequenceItem, OnDialogueLineFinished, null);
     }
 
-    // Step 3: Create a method that sets Switches/States and posts a Dynamic Dialogue Event
-    private void PlayDynamicDialogue(uint switchID_0, uint switchID_1, uint switchID_2)
+    private void OnDialogueLineFinished(object cookie, AkCallbackType type, AkCallbackInfo info)
     {
-        // Step A: Create a uint container and populate it with Switch and/or State IDs
-        uint[] dialoguePath =
-        {
-            switchID_0,
-            switchID_1,
-            switchID_2
-        };
-
-        // Step B: Generate an Audio Node and get its ID
-        /*  Arguments:
-         *      Dynamic Dialogue Event ID (uint)  *
-         *      Desired Switch/State IDs (uint[]) *
-         *      Number of Switches/States (uint)  */
-        uint dialogueNodeID = AkSoundEngine.ResolveDialogueEvent
-        (
-            dialogueEventID,
-            dialoguePath,
-            (uint)dialoguePath.Length
-        );
-
-        // Step C: Lock the Playlist
-        //  Argument: Dynamic Dialogue Sequence ID (uint)
-        akPlaylist = AkSoundEngine.DynamicSequenceLockPlaylist(dialogueSequenceID);
-
-        // Step D: Enqueue the Audio Node
-        //  Argument: Audio Node ID (uint)
-        akPlaylist.Enqueue(dialogueNodeID);
-
-        // Step E: Unlock the Playlist
-        //  Argument: Dynamic Dialogue Sequence ID (uint)
-        AkSoundEngine.DynamicSequenceUnlockPlaylist(dialogueSequenceID);
-
-        // Step F: Play the Sequence
-        //  Argument: Dynamic Dialogue Sequence ID (uint)
-        AkSoundEngine.DynamicSequencePlay(dialogueSequenceID);
-
-        // Step G: Close the Sequence
-        //  Argument: Dynamic Dialogue Sequence ID (uint)
-        AkSoundEngine.DynamicSequenceClose(dialogueSequenceID);
+        // Add any additional functionality here (to be run every time a dialogue line finishes playing).
     }
 
     public void PlayDialogue(uint switchID)
@@ -99,9 +60,22 @@ public class CheckPoint : MonoBehaviour
         AkSoundEngine.DynamicSequenceClose(dialogueSequenceID);
     }
 
+    // Stop any dialogue by playing silence
+    public static void StopAllDialogue(GameObject gameObjectReference)
+    {
+		uint dialogueEventID = AkSoundEngine.GetIDFromString(CheckPoint.dialogueEventName);
+        uint dialogueSequenceID = AkSoundEngine.DynamicSequenceOpen(gameObjectReference);
+        uint dialogueNodeID = AkSoundEngine.ResolveDialogueEvent(dialogueEventID, new uint[] {AkSoundEngine.GetIDFromString("Silence")}, 1);
+        AkSoundEngine.DynamicSequenceLockPlaylist(dialogueSequenceID).Enqueue(dialogueNodeID);;
+        AkSoundEngine.DynamicSequenceUnlockPlaylist(dialogueSequenceID);
+        AkSoundEngine.DynamicSequencePlay(dialogueSequenceID);
+        AkSoundEngine.DynamicSequenceClose(dialogueSequenceID);
+		AkSoundEngine.SetState("DialogueState", "NotPlaying");
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "Hitbox")
+        if (this.enabled == true && other.name == "Hitbox")
         {
             if (isCheckPoint)
             {

@@ -8,6 +8,6 @@
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2017.2.3.6575/Wwise 2017.app</WwiseInstallationPathMac>
-  <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2017.2.3.6575</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../PegasusCyberpunk_Master_2017.2.3/PegasusCyberpunk_Master_2017.2.3.wproj</WwiseProjectPath>
+  <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2017.2.10.6745</WwiseInstallationPathWindows>
+  <WwiseProjectPath>../Wwise/NeonPhase.wproj</WwiseProjectPath>
 </WwiseSettings>

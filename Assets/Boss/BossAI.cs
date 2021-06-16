@@ -22,7 +22,7 @@ public class BossAI : MonoBehaviour
     private void LoadCredits()
     {
         AkSoundEngine.SetState("GameState", "MainMenu");
-        SceneManager.LoadScene("Credit Screen");
+        SceneManager.LoadScene("Credits");
     }
 
     private void Attack()

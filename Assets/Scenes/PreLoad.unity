@@ -195,14 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1951dfd089a680247918360832ad9d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music:
-    ID: -1362926625
-    valueGuid: 37b2c84552deea44912b593845e60217
-  initialState:
-    ID: -690320037
-    valueGuid: 2e8a999f3e20b648a1ef844e20ccb82c
-    groupGuid: c2ac181bf35fd442b2c4b0e3141d8ca4
-    groupID: -203310782
+  music: Play_Music
+  initialState: GameState/MainMenu
 --- !u!114 &1037443134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,17 +206,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1037443132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a541e639b0647e14793ea35ef8c9333f, type: 3}
+  m_Script: {fileID: 11500000, guid: 687e8d4f172710249bc15dedccab9998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  bankName: Main
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 
-  valueGuid: d5cac281d37af84eab84330bc49a34fb
 --- !u!114 &1037443135
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,10 +24,10 @@ public class HealthControl : MonoBehaviour
     {
         if (canRespawn)
         {
-            AkSoundEngine.SetState("GameState", "Gameplay");
-            LevelControl.instance.ResetLevel();
+            AkSoundEngine.SetState("GameState", "MainMenu");
+            CheckPoint.StopAllDialogue(this.gameObject);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
-
         else
         {
             Debug.Log(gameObject.name+" will be destroyed via HealthControl");

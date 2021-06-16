@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Inputcontroller : MonoBehaviour
+public class InputController : MonoBehaviour
 {
     private Shooter playerShooter;
     private CharacterMove playerMover;
@@ -30,20 +30,24 @@ public class Inputcontroller : MonoBehaviour
 
     private void Update()
     {
-        HandleMoveAxis();
-        HandleAimAxis();
-        HandleFaceButtons();
-        HandleTrigger(Input.GetAxis("Fire"));
-
-        if (playerMover.isGrounded)
+        // Only process input if not paused
+        if (!PauseUI.paused)
         {
-            spriteControl.Ground();
+            HandleMoveAxis();
+            HandleAimAxis();
+            HandleFaceButtons();
+            HandleTrigger(Input.GetAxis("Fire"));
+
+            if (playerMover.isGrounded)
+            {
+                spriteControl.Ground();
+            }
         }
     }
 
     private void HandleTrigger(float value)
     {
-        if (value > 0.1f || Input.GetKey("k"))
+        if (value > 0.1f || Input.GetKey(KeyCode.K) || Input.GetKey(KeyCode.DownArrow))
         {
             playerShooter.Shoot();
             anmr1.Play("GunRecoil");
@@ -53,7 +57,7 @@ public class Inputcontroller : MonoBehaviour
 
     private void HandleFaceButtons()
     {
-        if (Input.GetAxis("PhaseJump") > 0.1f || Input.GetKeyDown("s"))
+        if (Input.GetAxis("PhaseJump") > 0.1f || Input.GetKeyDown(KeyCode.S))
         {
             if (phaser.activeNeon != null)
             {
@@ -61,20 +65,19 @@ public class Inputcontroller : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Joystick1Button5) || Input.GetKeyDown("i")) //RBumper
+        if (Input.GetKeyDown(KeyCode.Joystick1Button5) || Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.UpArrow)) //RBumper
         {
             if (isMovingRight)
             {
                 playerMover.DashRight();
             }
-
             else
             {
                 playerMover.DashLeft();
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Joystick1Button4) || Input.GetKeyDown(KeyCode.Joystick1Button0) || Input.GetKeyDown("w")) // LBumper
+        if (Input.GetKeyDown(KeyCode.Joystick1Button4) || Input.GetKeyDown(KeyCode.Joystick1Button0) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) // LBumper
         {
             playerMover.Jump();
             spriteControl.Jump();
@@ -85,7 +88,7 @@ public class Inputcontroller : MonoBehaviour
     {
         float xAxis = Input.GetAxis("HorizontalMove");
 
-        if (xAxis > 0.2f || Input.GetKey("d"))
+        if (xAxis > 0.2f || Input.GetKey(KeyCode.D))
         {
             playerMover.WalkRight();
             isMovingRight = true;
@@ -95,8 +98,7 @@ public class Inputcontroller : MonoBehaviour
                 spriteControl.Run();
             }
         }
-
-        else if (xAxis < -0.2f || Input.GetKey("a"))
+        else if (xAxis < -0.2f || Input.GetKey(KeyCode.A))
         {
             playerMover.WalkLeft();
             isMovingRight = false;
@@ -106,7 +108,6 @@ public class Inputcontroller : MonoBehaviour
                 spriteControl.Run();
             }
         }
-
         else
         {
             isMovingRight = spriteControl.spriteRenderer.flipX;
@@ -122,7 +123,7 @@ public class Inputcontroller : MonoBehaviour
     private void HandleAimAxis()
     {
         // FOR PC & MAC BUILDS (KEYBOARD)
-        if (Input.GetKeyDown("l"))
+        if (Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             spriteControl.FlipRight();
             playerShooter.currentShootArea = playerShooter.directRight;
@@ -131,7 +132,7 @@ public class Inputcontroller : MonoBehaviour
             GunPointRight.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
-        if (Input.GetKeyDown("j"))
+        if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             spriteControl.FlipLeft();
             playerShooter.currentShootArea = playerShooter.directLeft;
@@ -140,7 +141,7 @@ public class Inputcontroller : MonoBehaviour
             GunPointLeft.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (Input.GetKeyDown("o"))
+        if (Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.E))
         {
             spriteControl.FlipRight();
             playerShooter.currentShootArea = playerShooter.directRight;
@@ -149,7 +150,7 @@ public class Inputcontroller : MonoBehaviour
             GunPointRight.transform.rotation = Quaternion.Euler(0, 180, -45);
         }
 
-        if (Input.GetKeyDown("u"))
+        if (Input.GetKeyDown(KeyCode.U) || Input.GetKeyDown(KeyCode.Q))
         {
             spriteControl.FlipLeft();
             playerShooter.currentShootArea = playerShooter.directLeft;

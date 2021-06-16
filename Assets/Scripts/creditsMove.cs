@@ -1,18 +1,19 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class creditsMove : MonoBehaviour {
+public class CreditsMove : MonoBehaviour {
 
-    public float movespeed;
-    public RectTransform RKT;
+    [SerializeField] private int maxPositionY = 1200;
+    [SerializeField] private float movespeed;
+    [SerializeField] private RectTransform RKT;
 	
-	void Update()
+	private void Update()
     {
         this.transform.Translate(Vector2.up * movespeed * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.Joystick1Button0))
+        if (Input.GetKey(KeyCode.Joystick1Button0) || Input.GetKeyDown(KeyCode.Escape) || transform.position.y > maxPositionY)
         {
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("MainMenu");
         }
 	}
 }
