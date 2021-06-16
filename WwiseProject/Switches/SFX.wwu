@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B136C4FD-F4B3-4FE3-939E-4DFE79E9FD68}" SchemaVersion="85">
+	<Switches>
+		<WorkUnit Name="SFX" ID="{B136C4FD-F4B3-4FE3-939E-4DFE79E9FD68}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Surface" ID="{1A18007E-C8A8-4E00-B21D-79E4524B6110}">
+					<ChildrenList>
+						<Switch Name="Metal" ID="{6E1664F1-A29A-490F-9B59-BFEAE5314202}"/>
+						<Switch Name="Concrete" ID="{F416D2B4-0DA1-461A-B47C-824D34628B5B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

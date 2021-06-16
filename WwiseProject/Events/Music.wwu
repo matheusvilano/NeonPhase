@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4448EDA5-F6AF-436C-82ED-BC5B6A1FB36D}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Music" ID="{4448EDA5-F6AF-436C-82ED-BC5B6A1FB36D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music" ID="{45C8B237-DE52-44EA-912B-593845E60217}">
+					<ChildrenList>
+						<Action Name="" ID="{FF8D0803-3C38-4DCB-96DD-0BF269FC0407}" ShortID="1027611305">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{F1846B10-B88C-4D40-AF97-4D36507826A8}" WorkUnitID="{95480AA2-50C6-4FA1-B25F-FD802EB24305}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music" ID="{4FDE79D2-46BD-4079-9CA4-CC30F1C29845}">
+					<ChildrenList>
+						<Action Name="" ID="{6A9ECF64-7BBB-4479-BEAF-86903ABF7EA8}" ShortID="876329624">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{F1846B10-B88C-4D40-AF97-4D36507826A8}" WorkUnitID="{95480AA2-50C6-4FA1-B25F-FD802EB24305}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pause_Music" ID="{54579BAD-D32B-4C16-AF84-682BC1658A4F}">
+					<ChildrenList>
+						<Action Name="" ID="{6CB6832C-EA97-4EF1-99E1-DAEC94ECB487}" ShortID="56493905">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{F1846B10-B88C-4D40-AF97-4D36507826A8}" WorkUnitID="{95480AA2-50C6-4FA1-B25F-FD802EB24305}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Resume_Music" ID="{4A0CCE83-74AE-45E9-94BD-50E91CBD430E}">
+					<ChildrenList>
+						<Action Name="" ID="{D8DB61DF-4FAA-42BB-B770-C0576FA450E3}" ShortID="1055221972">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{F1846B10-B88C-4D40-AF97-4D36507826A8}" WorkUnitID="{95480AA2-50C6-4FA1-B25F-FD802EB24305}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

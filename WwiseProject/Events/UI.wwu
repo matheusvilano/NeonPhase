@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C299595B-C078-4B3B-ABB4-4D171C8836E9}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="UI" ID="{C299595B-C078-4B3B-ABB4-4D171C8836E9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Select" ID="{E1E797AA-C633-4B25-B4E9-CFECAF67A452}">
+					<ChildrenList>
+						<Action Name="" ID="{D09D41BE-F843-4C0B-A583-A705E39C2926}" ShortID="974487285">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Select" ID="{C34DF6F4-BDDB-4600-B838-86C4B53E8E82}" WorkUnitID="{661AE8FC-1360-4B99-A959-7B04ED3050FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Exit" ID="{8B73464C-25BF-4752-8E46-3F9B20CD55F6}">
+					<ChildrenList>
+						<Action Name="" ID="{3904C358-6F5B-4FF8-827B-7DCA46D65538}" ShortID="324157976">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Exit" ID="{5DC454B0-F23F-4EB7-8A4D-59C6EB6165E4}" WorkUnitID="{661AE8FC-1360-4B99-A959-7B04ED3050FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Start" ID="{4ACABE63-87FB-46B2-B387-519FA448C92F}">
+					<ChildrenList>
+						<Action Name="" ID="{34D5468F-93AE-4769-B82F-2627AA8749C9}" ShortID="3139252">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Start" ID="{0DFD88B9-E718-4796-A3D7-7592CE79F650}" WorkUnitID="{661AE8FC-1360-4B99-A959-7B04ED3050FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Back" ID="{693DFC39-C8C1-472E-8C04-346E6A9AAFE9}">
+					<ChildrenList>
+						<Action Name="" ID="{7E72D1BA-39B9-44D9-923D-D91DDE1831C4}" ShortID="934854819">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Back" ID="{9C7856A1-2A2A-4E95-8BEE-8EA903CD9761}" WorkUnitID="{661AE8FC-1360-4B99-A959-7B04ED3050FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Highlight" ID="{54C7BFCE-33B6-4836-B6CB-6605DBA40157}">
+					<ChildrenList>
+						<Action Name="" ID="{C279CB3D-EBE1-4202-A331-5A250A489A6A}" ShortID="850804653">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Highlight" ID="{D5C6E526-87C1-4358-A39A-13458658F93D}" WorkUnitID="{661AE8FC-1360-4B99-A959-7B04ED3050FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
